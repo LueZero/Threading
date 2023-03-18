@@ -14,7 +14,7 @@ namespace Threading.FizzBuzz._2
 		
 		public override void Print()
 		{
-			Console.WriteLine(current);
+			Console.WriteLine(Current);
 		}
 	}
 }

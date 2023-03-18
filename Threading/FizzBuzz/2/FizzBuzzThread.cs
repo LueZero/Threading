@@ -11,7 +11,7 @@ namespace Threading.FizzBuzz._2
 	{
 		private static Object _lock = new Object();
 
-		protected static int current = 1;
+		protected static int Current = 1;
 
 		private int _max;
 
@@ -38,15 +38,15 @@ namespace Threading.FizzBuzz._2
 			{
 				lock (_lock)
 				{
-					if (current > _max)
+					if (Current > _max)
 					{
 						return;
 					}
 
-					if ((current % 3 == 0) == _div3 && (current % 5 == 0) == _div5)
+					if ((Current % 3 == 0) == _div3 && (Current % 5 == 0) == _div5)
 					{
 						Print();
-						current++;
+						Current++;
 					}
 				}
 			}
